@@ -23,6 +23,10 @@
 img{
     max-width: 100%;
 }
+input[type="text"]{
+    font-family: inherit;
+    padding: 16px;
+}
 /*****************************
         UTILITIES
 ******************************/
@@ -49,6 +53,7 @@ h1{
 /*****************************
         MAIN
 ******************************/
+/* PREVIEW */
 .preview{
     width: 350px;
     height: 350px;
@@ -62,10 +67,24 @@ h1{
     top: 0;
     left: 0;
 }
+.preview-sender{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: bold;
+}
+/* CONTROLS */
+.controls > * {
+    width: 100%;
+    margin-bottom: 16px;
+}
 .actions{
     display: flex;
     justify-content: space-between;
-
 }
 .actions > .btn{
     width: 48%;
@@ -73,6 +92,7 @@ h1{
 .btn{
     padding: 8px 16px;
     border: none;
+    cursor: pointer;
 }
 .primary-btn{
     background-color: var(--pink);

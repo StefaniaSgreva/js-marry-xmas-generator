@@ -19,9 +19,11 @@
             <!-- MAIN -->
             <main>
                 <div class="preview">
-                    <img src="./images/img_1.png" alt="image 1">
-                    <img src="./images/txt_1.png" alt="text 1">
+                    <img id="preview-img" src="./images/img_1.png" alt="image 1">
+                    <img id="preview-txt" src="./images/txt_1.png" alt="text 1">
+                    <div class="preview-sender">Augurissimi</div>
                 </div>
+
                 <div class="controls">
                     <div class="actions">
                         <button id="change-image" class="btn primary-btn">
@@ -31,11 +33,18 @@
                             <img src="./images/icon-text.png" alt="Cambia testo">
                         </button>
                     </div>
-                
+
+                    <input id="sender" class="controls" type="text" maxlength="20" placeholder="tuo nome">
+
+                    <button id="download" class="btn secondary-btn">
+                        <img src="./images/icon-download.png" alt="download">
+                    </button>
                 </div>
             </main>
         </div>
 
+        <!-- html-to-image by bubkoo CDN  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.3/html-to-image.min.js" integrity="sha512-QxqDlz0XgD3yDbMYr8U7H4WpbPewHNFExffq5blMiTZHfNXXsXT2JrIaF8FYqMBrX7OdILft/0vwjyp7FeK/Ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- link my JS  -->
         <script src="./JS/script.js"></script>
     </body>
